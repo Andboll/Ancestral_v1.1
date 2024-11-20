@@ -1,0 +1,294 @@
+
+.historia {
+  position: relative; /* Para posicionar el texto relativo a la imagen */
+  width: 99%; /* Ajusta el ancho a tu conveniencia */
+  height: 400px; /* Altura automática según el contenido */
+  display: flex; /* Permite usar flexbox para la distribución */
+  flex-direction: column; /* Apila los elementos verticalmente por defecto */
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-bottom-right-radius: 30px;
+  overflow: hidden;
+}
+
+.historia-fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+filter: brightness(0.7);
+}
+
+.hist-text-l {
+  color: white;
+  border-radius: 15px;
+  position: absolute; /* Posición absoluta dentro de .historia */
+  top: 20px; /* Ajusta la distancia desde arriba */
+  left: 20px; /* Ajusta la distancia desde la izquierda */
+  width: 45%; /* Ancho del contenedor de texto izquierdo*/
+  background-color: rgba(214, 214, 214, 0); /* Fondo semi-transparente */
+  padding: 20px;
+  z-index: 2; /* Asegura que el texto esté por encima de la imagen*/
+  font-size: 0.8em;
+}
+
+.hist-text-r {
+  color: white;
+  border-radius: 15px;
+  position: absolute; /* Posición absoluta dentro de .historia */
+  bottom: 20px; /* Ajusta la distancia desde arriba */
+  right: 20px; /* Ajusta la distancia desde la izquierda */
+  width: 40%; /* Ancho del contenedor de texto izquierdo*/
+  background-color: rgba(214, 214, 214, 0); /* Fondo semi-transparente */
+  padding: 20px;
+  z-index: 2; /* Asegura que el texto esté por encima de la imagen*/
+  font-size: 0.8em;
+}
+
+.hist-text-l .hist-text {
+  /*Estilo para cada párrafo dentro de hist-text-l*/
+  margin-bottom: 10px;
+}
+
+/*<--------------------------------------------------------------------->*/
+
+.origen {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* Distribuye los elementos horizontalmente */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  width: 98.8%;
+  height: 700px; /* Altura automática según el contenido**/
+  border-top-left-radius: 30px; /* Borde redondeado en la esquina superior izquierda */
+  border-bottom-left-radius: 30px; /* Borde redondeado en la esquina inferior izquierda */
+  margin-bottom: 20px; /* Margen inferior */
+  margin-left: 20px;
+  overflow: hidden; /* Recorta el contenido que se desborde debido a los bordes redondeados (opcional, pero recomendado) */
+}
+
+.origen-fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  filter: brightness(0.5);
+}
+
+/* Estilos para la descripción del origen */
+.origen-desc {
+  border-radius: 15px;
+  position: absolute;
+  bottom: 50px;
+  left: 15px;
+  background-color: rgba(168, 165, 165, 0); /* Fondo semi-transparente */
+  color: white;
+  padding: 20px;
+  width: 160px; /* Ajusta según sea necesario */
+  text-align: center; /* Centra el texto */
+}
+
+.origen-desc .cnc {
+  width: 160px;
+}
+
+.origen-desc h1,
+.origen-desc h2,
+.origen-desc h3 {
+  display: flex;
+  margin: 5px 0; /* Reduce el espacio entre títulos */
+  align-items: flex-start;
+}
+
+.mun {
+  font-size: 1.2em;
+}
+
+.dep {
+  font-size: 1em;
+}
+
+.ctor {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.msnm {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Estilos para variedad y puntaje */
+.vyp {
+  position: absolute;
+  border-radius: 15px;
+  bottom: 50px;
+  left: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Apila verticalmente */
+  width: 300px;
+  margin-top: 10px;
+  background-color: rgba(168, 165, 165, 0); /* Fondo semi-transparente */
+  color: white;
+}
+
+.vyp .variedad,
+.vyp .puntaje {
+  margin-bottom: 10px;
+}
+
+.vyp .title-desc {
+  font-size: 1.2em;
+}
+
+.vyp ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilos para aroma, sabor y sabor residual */
+.lists-aroma-sabor-residual {
+  position: absolute;
+  border-radius: 15px;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 550px; /* Ajusta según sea necesario**/
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0); /* Fondo semi-transparente */
+  color: white;
+  text-align: right;
+}
+
+.lists-aroma-sabor-residual .aroma,
+.lists-aroma-sabor-residual .sabor,
+.lists-aroma-sabor-residual .sabor-recidual {
+  margin-bottom: 20px;
+}
+
+.lists-aroma-sabor-residual .title-desc {
+  font-size: 1.2em;
+}
+
+.lists-aroma-sabor-residual ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*<--------------------------------------------------------------------->*/
+
+.produccion {
+
+  display: flex;
+  width: 99%;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  align-items: center; /* Centra horizontalmente los elementos */
+  border-top-right-radius: 30px; /* Borde redondeado en la esquina superior izquierda */
+  border-bottom-right-radius: 30px; /* Borde redondeado en la esquina inferior izquierda */
+  margin-bottom: 20px; /* Margen inferior */
+  overflow: hidden;
+}
+
+.produccion-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+  
+}
+
+.desc-produccion,
+.produc-text-sup,
+.produc-text-inf {
+  width: 80%; /* Ajusta el ancho según sea necesario */
+  margin: 20px 0; /* Margen superior e inferior */
+  text-align: center; /* Centra el texto */
+}
+
+.desc-produccion h1 {
+  /* Estilos específicos para el h1 */
+  margin: 0; /* Elimina el margen por defecto del h1 */
+}
+
+.list-prod {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Ajusta el ancho según sea necesario**/
+  margin: 20px auto;
+}
+
+.list-prod-l,
+.list-prod-r {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  text-align: left; /* Alinea el texto de la lista a la izquierda */
+}
+
+.list-prod-l ol,
+.list-prod-r ol {
+  margin: 0; /* Elimina el margen por defecto de la lista */
+  padding: 0; /* Elimina el padding por defecto de la lista */
+}
+
+.list-prod-l li,
+.list-prod-r li {
+  margin-bottom: 10px;
+}
+
+/*<--------------------------------------------------------------------->*/
+
+.ingredientes {
+  display: flex;
+  width: 98.8%;
+  flex-direction: column; /* Alinea verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  position: relative;
+  color: white; /* O el color que necesites */
+  border-top-left-radius: 30px; /* Borde redondeado en la esquina superior izquierda */
+  border-bottom-left-radius: 30px; /* Borde redondeado en la esquina inferior izquierda */
+  margin-bottom: 20px; /* Margen inferior */
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.ingr-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+
+.ingr-text {
+  width: 80%; /* Ajusta según sea necesario */
+  margin: 20px 0;
+}
+
+.ingr-text h1 {
+  margin: 0; /* Elimina el margen por defecto del h1 */
+}
+
+.list-ingr {
+  width: 80%; /* Ajusta el ancho según sea necesario */
+  text-align: left; /* Alinea el texto de la lista a la izquierda */
+}
+
+.list-ingr ol {
+  list-style-position: inside; /* Coloca el marcador dentro de la lista */
+  padding-left: 0; /* Elimina el padding izquierdo */
+  margin: 0;
+}
+
+.list-ingr li {
+  margin-bottom: 10px;
+}

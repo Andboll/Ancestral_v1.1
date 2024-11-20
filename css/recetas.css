@@ -1,0 +1,85 @@
+.receta-l {
+  display: flex;
+  background-color: #E7D5B7;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  justify-content: flex-start;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.receta-r {
+  display: flex;
+  background-color: #F5EDDF  ;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  justify-content: flex-end; /* Alinea el contenido a la derecha */
+  margin-left: 25px; /* Añade un margen izquierdo para separar de la receta de la izquierda */
+  margin-bottom: 25px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px
+
+}
+
+.img-l {
+  width: 270px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-right: 20px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.700); /* Sombra suave */
+}
+
+.img-r {
+  width: 270px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-left: 20px; /* Margen izquierdo para separar de texto */
+  order: 1;        /* Coloca la imagen después del texto */
+  box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.700); /* Sombra suave */
+}
+
+.texto-receta-l {
+  display: flex; /* Flexbox para el texto */
+  flex-direction: column; /* Apilar título y descripción verticalmente */
+  flex: 1; 
+  align-items: flex-start;
+}
+
+.receta-text-r {  /*  Cambié el nombre de la clase para ser más específico */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-end; /* Alinea el texto a la derecha */
+}
+  
+.titulo-receta-l {
+    font-size: 24px;
+    color: #5F371F;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.titulo-receta-r {
+  font-size: 24px;
+  color: #5F371F;
+  margin-bottom: 10px;
+  text-align: right; /* Alinea el texto del título a la derecha */
+}
+
+.descripcion-receta-l {
+    font-size: 16px;
+    color: #5F371F;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.descripcion-receta-r {
+  font-size: 16px;
+  color: #5F371F;
+  line-height: 1.5;
+  text-align: right; /* Alinea el texto de la descripción a la derecha */
+}

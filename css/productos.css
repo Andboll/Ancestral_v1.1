@@ -1,0 +1,59 @@
+.productos-venta {
+  display: flex;  /* Habilita el flexbox */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espacio entre los productos */
+  padding: 20px;
+  background-color: #D2C1B0;
+}
+
+.producto {
+  background-color: #8F755F;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+  height: 300px;
+}
+
+.img-prod {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px; /* Bordes ligeramente redondeados para la imagen */
+  margin-bottom: 10px; /* Espacio entre la imagen y el título */
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.700); /* Sombra suave */
+  margin: 0 auto;
+  display: block; /* Para que la imagen se centre correctamente */
+}
+
+.titulo {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-block-start: 10px;
+  margin-block-end: 5px;
+  margin-left: 10px;
+  color: #F5EFE3; /* Color de texto oscuro */
+  text-align: left;
+}
+
+.precio {
+  font-size: 1.1em;
+  color: #E4BC84; /* Color dorado para el precio */
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+  margin-left: 10px;
+  text-align: left;
+  margin-bottom: 0.25em;
+}
+
+.descripcion {
+  font-size: 0.9em;
+  color: #E7D5B7
+  ; /* Color de texto grisáceo */
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+  margin-left: 10px;
+  text-align: left;
+}

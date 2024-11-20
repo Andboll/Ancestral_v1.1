@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ancestral</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolpEjrx+zJLxfpDVgKVIoCvSUyQyGYlGb30dBxu30g==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/historia.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="logo">
+        <h2 class="cafe">Café</h2>
+        <h1 class="ancestral">Ancestral</h1>
+        <h2 class="dmt">de mi tierra</h2>
+      </section>
+
+      <nav>
+        <ul>
+          <li><a href="/inicio">Inicio</a></li>
+          <li><a href="/historia">Historia</a></li>
+          <li><a href="/productos">Productos</a></li>
+          <li><a href="/recetas">Recetas</a></li>
+          <li>
+            <a href="#" id="toggleContactos">Contactos</a>
+            <ul id="contactosDropdown" class="dropdown-menu">
+              <li><a href="https://www.facebook.com/pagina" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+              <li><a href="https://www.instagram.com/perfil" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="https://twitter.com/usuario" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="tel:+1234567890"><i class="fas fa-phone"></i> +1234567890</a></li> <!-- Reemplaza con tu número -->
+              <li><a href="mailto:correo@example.com"><i class="fas fa-globe"></i>correo@example.com</a></li> <!-- Reemplaza con tu correo -->
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="historia">
+        <img
+          class="historia-fondo"
+          src="/image/historia/planta_de_cafe.jpeg"
+          alt="planta-de-cafe"
+        />
+        <div class="hist-text-l">
+          <p class="hist-text">
+            El café en Colombia tiene sus raíces en el siglo XVIII, cuando los
+            jesuitas introdujeron las primeras plantas en el país. Su cultivo se
+            extendió rápidamente debido a las favorables condiciones climáticas
+            y geográficas de regiones como el Eje Cafetero. Hoy en día, el café
+            colombiano es reconocido mundialmente por su calidad y sabor
+            distintivo.
+          </p>
+          <p class="hist-text">
+            Este cultivo no solo ha sido fundamental en la economía del país,
+            generando millones de empleos y exportaciones, sino que también ha
+            moldeado la identidad cultural de muchas comunidades.
+          </p>
+        </div>
+        <div class="hist-text-r">
+          <p class="hist-text">
+            Además, el café ha tenido un profundo impacto en el medio ambiente,
+            promoviendo prácticas sostenibles y la preservación de biodiversidad
+            en las zonas cafeteras.
+          </p>
+          <p class="hist-text">
+            El café no solo es un producto agrícola, sino un símbolo nacional
+            que ha dejado una huella indeleble en la historia y el desarrollo de
+            Colombia.
+          </p>
+        </div>
+      </section>
+
+      <section class="origen">
+        <img
+          class="origen-fondo"
+          src="/image/historia/cultivo_de_cafe.jpg"
+          alt="cultivo-de-cafe"
+        />
+
+        <article class="origen-desc">
+          <img
+            class="cnc"
+            src="/image/historia/Colombia_Nariño_Colón.png"
+            alt="Colombia-Nariño-Colón"
+          />
+          <h1 class="mun">Colon Génova</h1>
+          <h2 class="dep">Narino</h2>
+          <h3 class="ctor">Albeiro Noguera Urbano</h3>
+          <h1 class="msnm">1840 msnm</h1>
+        </article>
+
+        <article class="vyp">
+          <div class="variedad">
+            <h2 class="title-desc">Variedad:</h2>
+            <ul id="lista">
+              Colombia roja
+            </ul>
+          </div>
+
+          <div class="puntaje">
+            <h2 class="title-desc">Puntaje SCA:</h2>
+            <ul id="lista">
+              86.25
+            </ul>
+          </div>
+        </article>
+
+        <article class="lists-aroma-sabor-residual">
+          <div class="aroma">
+            <h2 class="title-desc">Aroma:</h2>
+            <ul id="lista">
+              <li>Caramelo</li>
+              <li>Chocolate</li>
+              <li>Miel</li>
+              <li>Afrutado</li>
+            </ul>
+          </div>
+
+          <div class="sabor">
+            <h2 class="title-desc">Sabor:</h2>
+            <ul id="lista">
+              <li>Frutos rojos</li>
+              <li>Cítricos</li>
+              <li>Vinoso</li>
+              <li>Cuerpo cremoso</li>
+            </ul>
+          </div>
+
+          <div class="sabor-recidual">
+            <h2 class="title-desc">Sabor Residual:</h2>
+            <ul id="lista">
+              <li>Limpio prolongado</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="produccion">
+        <img
+          class="produccion-fondo"
+          src="/image/historia/planta_de_cafe_0.jpeg"
+          alt="planta-de-cafe-0"
+        />
+
+        <div class="desc-produccion">
+          <h1>Proceso de Producción</h1>
+        </div>
+
+        <div class="produc-text-sup">
+          <p>
+            El proceso de lavado doble fermentación en la producción de café es
+            una técnica utilizada para mejorar la calidad del grano y resaltar
+            sabores específicos. Aquí te detallo las etapas de este proceso:
+          </p>
+        </div>
+
+        <div class="list-prod">
+          <div class="list-prod-l">
+            <ol type="1" ">
+              <li>
+                <b>Recolección:</b> Se cosechan los frutos de café, asegurando que
+                estén en su punto óptimo de madurez.
+              </li>
+              <li>
+                <b>Despulpe:</b> Los frutos se despulpan para retirar la cáscara
+                exterior y exponer el grano cubierto por la mucilaginosa. Esto se
+                hace utilizando despulpadoras.
+              </li>
+              <li>
+                <b>Fermentación (Primera Fermentación):</b> Los granos despulpados
+                se colocan en tanques de fermentación con agua. Este proceso dura
+                entre 12 a 48 horas, dependiendo de las condiciones climáticas. La
+                fermentación ayuda a descomponer la mucilaginosa, facilitando su
+                eliminación.
+              </li>
+              <li>
+                <b>Lavado:</b> Después de la primera fermentación, los granos se
+                lavan con agua para eliminar los restos de mucílago. Esto asegura
+                que el grano quede limpio antes de la segunda fermentación.
+              </li>
+            </ol>
+          </div>
+  
+          <div class="list-prod-r">
+            <ol type="1" start="5">
+              <li>
+                <b>Fermentación (Segunda Fermentación):</b> Los granos lavados se
+                colocan nuevamente en tanques de fermentación. Esta segunda fase
+                puede durar entre 6 a 24 horas. Este proceso adicional permite que
+                se desarrollen sabores más complejos y una mayor claridad en el
+                perfil del café.
+              </li>
+              <li>
+                <b>Lavado Final:</b> Se realiza un último lavado para asegurarse de
+                que todos los residuos sean eliminados. Los granos se limpian a
+                fondo.
+              </li>
+              <li>
+                <b>Secado:</b> Los granos se extienden al sol o se secan en
+                secadoras mecánicas hasta alcanzar un contenido de humedad adecuado
+                (alrededor del 10-12%).
+              </li>
+              <li>
+                <b>Cernido y almacenamiento:</b> Finalmente, los granos se ciernan
+                para eliminar impurezas y se almacenan adecuadamente para su
+                posterior comercialización.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="produc-text-inf">
+          <p class="produc-text">
+            Este proceso de lavado doble fermentación es especialmente valorado en
+            la producción de cafés de especialidad, ya que contribuye a un perfil
+            de sabor limpio, brillante y complejo.
+          </p>
+        </div>
+      </section>
+
+      <section class="ingredientes">
+        <img
+        class="ingr-fondo"
+        src="/image/historia/granos_de_cafe.jpg"
+        />
+
+        <div class="ingr-text">
+          <h1>Ingredientes</h1>
+        </div>
+
+        <div class="list-ingr">
+          <ol>
+            <li>
+              <b>Cafeína:</b> Un alcaloide que actúa como estimulante.
+            </li>
+            <li>
+              <b>Ácidos:</b> Incluyen ácido clorogénico y ácidos cítrico y málico,
+              que aportan acidez y sabor.
+            </li>
+            <li>
+              <b>Azúcares:</b> Carbohidratos que contribuyen a la dulzura del
+              café.
+            </li>
+            <li>
+              <b>Lípidos:</b> Grasas que afectan la textura y el cuerpo del café.
+            </li>
+            <li>
+              <b>Proteínas:</b> Presentes en menor cantidad, contribuyen a la
+              formación de crema en algunas preparaciones.
+            </li>
+            <li>
+              <b>Compuestos aromáticos:</b> Más de 800 compuestos volátiles que
+              dan el aroma y sabor característicos del café.
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

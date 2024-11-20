@@ -1,0 +1,72 @@
+/* Sección de la frase */
+.frases {
+  display: flex; /* Permite alinear elementos horizontalmente */
+  align-items: flex-end; /* Alinea verticalmente al centro */
+  justify-content: flex-end;
+  background-color: #f5f0e1; /* Color de fondo beige claro */
+  text-align: center; /* Centra el texto */
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-bottom-right-radius: 30px;
+}
+
+.frases-text {
+  font-size: 2rem; /* Tamaño de fuente */
+  font-weight: 500; /*  Fuente semi-negrita */
+  color: #333; /* Color del texto */
+  margin-right: 20px; /* Espacio entre el texto y la imagen */
+  max-width: aunto; /* Ancho máximo del texto */
+}
+
+.frases-fondo img {
+  width: 350px; /* Ajusta el ancho de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*  Sombra sutil */
+  border-bottom-right-radius: 30px;
+}
+
+/*<---------------------------------------------------------------------------------->*/
+
+/* inicio.css */
+
+.quienes-somos {
+    background-color: #E4BC84; /* Color de fondo suave para la sección */
+    padding: 20px; /* Espacio alrededor del contenido */
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  .q-s-title {
+    width: 100%; /* El título abarca todo el ancho */
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 20px; /* Espacio inferior al título */
+  }
+  
+  .q-s-desc {
+    display: flex; /* Permite alinear los divs horizontalmente */
+    flex-direction: row; /* Alinea horizontalmente */
+    justify-content: space-around; /* Distribuye el espacio entre los divs */
+    flex-wrap: wrap; /* Permite que los divs se envuelvan si no hay suficiente espacio */
+  }
+  
+  .qsd-r,
+  .qsd-c,
+  .qsd-l {
+    flex-basis: 30%; /* Cada div ocupa aproximadamente el 30% del ancho */
+    margin: 10px;  /* Margen para separar visualmente los divs */
+  }
+  
+  /* Estilos adicionales (opcional) */
+  .q-s-title h1 {
+    font-size: 2.5em; /* Tamaño de fuente del título */
+    color: #37251B; /* Color del título */
+  }
+  
+  .q-s-desc p {
+      line-height: 1.6; /* Interlineado para mejor legibilidad */
+      color: #37251B; /* color del texto*/
+  }
+  
+  
